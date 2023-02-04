@@ -51,11 +51,11 @@ def controller(message):
         flag = "user" if flag == "bot" else "bot"
         bot.send_message(message.chat.id, f"Победил {flag}!")
         mrk = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
-        key1 = telebot.types.KeyboardButton("рестар")
-        key2 = telebot.types.KeyboardButton("выход")
+        key1 = telebot.types.KeyboardButton("Рестарт")
+        key2 = telebot.types.KeyboardButton("Выход")
         mrk.add(key1)
         mrk.add(key2)
-        bot.send_message(message.chat.id,"если хочешь перезапусти", reply_markup=mrk)
+        bot.send_message(message.chat.id,"Если хочешь, перезапусти", reply_markup=mrk)
         bot.register_next_step_handler(message,choose_op)
 
 
