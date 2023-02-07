@@ -1,6 +1,7 @@
 import telebot, datetime, time, math, re
 from telebot import types
 
+
 BOT_TOKEN = '6107155026:AAE0fNi_ufg9CeyplwrdhWSFnjCmY7i0aeE' # Токен Телеграм-бота
 BOT_NAME = 'calc_bot' # Имя для бота. Нужно в том случае, если вы хотите обращаться к боту по имени
 bot = telebot.TeleBot("6107155026:AAE0fNi_ufg9CeyplwrdhWSFnjCmY7i0aeE")
@@ -11,7 +12,7 @@ WITHOUT_ICON = 'https://raw.githubusercontent.com/6eremotuk01/Calculator-bot/mas
 WITH_ICON = 'https://raw.githubusercontent.com/6eremotuk01/Calculator-bot/master/img/with.jpg' # Ссылка на иконку "без выражения"
 
 # Сообщение при старте
-START_MESSAGE = """Отправь мне выражение, а я тебе скажу ответ)"""
+START_MESSAGE = """Отправь мне выражение"""
 # Сообщение поддержки
 HELP_MESSAGE = """Мной пользоваться очень просто. Вы мне отправляете выражение, а я вам возвращаю его результат.
 ***Операторы***:
